@@ -13,7 +13,7 @@ export default function Home() {
    const fetchCatalog = async () => {
      try {
        const response = await axios.get(
-         "/api/catalog/category"
+         "/api/catalog/category/"
        ); // Full URL
        console.log(response.data);
        return response.data.results;
